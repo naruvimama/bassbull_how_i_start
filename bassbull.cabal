@@ -57,7 +57,10 @@ executable bassbull
   -- other-extensions:    
   
   -- Other library packages from which modules are imported.
-  build-depends:       base >=4.7 && <4.8
+  build-depends:       base >=4.7 && <5,
+                       bytestring,
+                       vector,
+                       cassava
   
   -- Directories containing source files.
   -- hs-source-dirs:      
@@ -65,3 +68,5 @@ executable bassbull
   -- Base language which the package is written in.
   default-language:    Haskell2010
   
+  ghc-options:         -Wall
+  hs-source-dirs:      src
